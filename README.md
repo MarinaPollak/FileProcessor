@@ -1,6 +1,6 @@
 # FileProcessor
 
-The FileProcessor is a program designed to process different types of files (CSV, JSON, TXT) and provides a framework for extending to handle additional file types. The program reads files from an input directory, performs specific processing based on file types, and generates formatted output.
+The FileProcessor is a program designed to process different types of files (CSV, JSON, TXT, XML) and provides a framework for extending to handle additional file types. The program reads files from an input directory, performs specific processing based on file types, and generates formatted output.
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ Follow the steps below to build and run the FileProcessor:
    - Implement the `GetParserForFile(string filePath)` method to return an instance of the appropriate file parser based on the file extension.
 
 4. **Implement File Parsers:**
-   - Create classes that implement the `IFileParser` interface for each file type (e.g., `CSVParser`, `JsonParser`, `TxtParser`).
+   - Create classes that implement the `IFileParser` interface for each file type (e.g., `CSVParser`, `JsonParser`, `TxtParser`, 'XMLParser').
    - Implement the `ParseFile` method in each class to process the specific file type and return a formatted string.
 
 5. **Define Data Classes:**
